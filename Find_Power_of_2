@@ -1,0 +1,13 @@
+Write a Python program using a while loop to find the smallest power of 2 that exceeds 100 and print the result.
+
+
+
+def main():
+    power_of_two = 2
+    while power_of_two <= 100:
+        power_of_two = power_of_two * 2
+    print(power_of_two)
+
+if __name__ == "__main__":
+    main()
+    
