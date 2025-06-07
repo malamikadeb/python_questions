@@ -1,0 +1,16 @@
+Given a number num = 123, write a Python program using a while loop to count the number of digits and print the result.
+
+
+def main():
+    num = 123
+    count = 0
+    temp = num
+    while temp > 0:
+        temp = temp // 10
+        count += 1
+    print("Number of digits:", count)
+
+
+if __name__ == "__main__":
+    main()
+    
