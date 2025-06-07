@@ -1,0 +1,14 @@
+Given a number num = 456, write a Python program using a while loop to calculate the sum of its digits and print the result.
+
+
+def main():
+    num = 456
+    sum = 0
+    while num > 0:
+        digit = num % 10
+        sum += digit
+        num = num // 10
+    print(sum)
+if __name__ == "__main__":
+    main()
+    
