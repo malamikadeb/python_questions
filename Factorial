@@ -1,0 +1,13 @@
+Given a number n = 5, write a Python program using a while loop to calculate its factorial and print the result.
+
+def main():
+    n = 5
+    factorial = 1
+    while n > 0:
+        factorial = factorial * n
+        n - 1
+    print(factorial)
+
+if __name__ == "__main__":
+    main()
+    
