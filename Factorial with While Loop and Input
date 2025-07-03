@@ -1,0 +1,17 @@
+Write a Python program that asks the user for a number and prints its factorial using a while loop.
+
+
+
+def main():
+    num = int(input())
+    if num < 0:
+        print("error")
+    else:
+        factorial = 1
+        while num > 1:
+            factorial *= num
+            num -= 1
+        print(f"Factorial of {num} is: {factorial}")
+
+if __name__ == "__main__":
+    main()
