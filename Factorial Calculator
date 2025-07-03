@@ -1,0 +1,23 @@
+Write a Python program that calculates the factorial of a number using loops. The program should show the calculation process step by step and display the final result.
+
+
+
+def calculate_factorial(num):
+    factorial = 1
+    print(f"Calculating factorial of {num}:")
+    print(f"{num}! = ")
+    while num > 0:
+        factorial = factorial * num
+        if num > 1:
+            print(f"{num} x ", end = " ")
+        else:
+            print(f"{num} = ", end = " ")
+        num -= 1
+    print(factorial)
+
+
+# Predefined inputs
+num = 5
+
+# Function call
+calculate_factorial(num)
