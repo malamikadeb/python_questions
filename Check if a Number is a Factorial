@@ -1,0 +1,21 @@
+Write a Python program that checks whether a given positive integer is a factorial of some number. Return True if it is a factorial of any integer, otherwise return False.
+
+
+
+def is_factorial(n):
+    # Code Starts
+    if n < 0:
+        return false
+    factorial = 1
+    i = 1
+    while factorial < n:
+        i += 1
+        factorial *= i
+    return factorial == n
+    # Code Ends
+
+# Predefined inputs
+num = 120
+
+# Function call
+print(is_factorial(num))
