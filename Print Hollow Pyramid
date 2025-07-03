@@ -1,0 +1,19 @@
+Write a Python program to print a hollow centered pyramid of stars (*) with 5 rows, where only the first, last, and border stars are printed, using a for loop.
+
+
+
+def main():
+    rows = 5
+    for i in range(1, rows + 1):
+        spaces = rows - i
+        print(" " * spaces, end="")
+        for j in range(1, 2 * i):
+            if j == 1 or j == 2 * i - 1 or i == rows:
+                print("*", end="")
+            else:
+                print(" ", end="")
+        print()
+
+if __name__ == "__main__":
+    main()
+    
