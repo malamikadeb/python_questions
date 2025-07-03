@@ -1,0 +1,26 @@
+Write Python code to check if 31 is a prime number by finding its factors.
+
+
+
+def find_prime_factors():
+    n = 31
+    original_n = n
+    factors = []
+    while n % 2 == 0:
+        factors.append(2)
+        n //= 2
+    i = 3
+    while i * i <= n:
+        while n % i == 0:
+            factors.append(i)
+            n //= i
+        i += 2
+    if n > 2:
+        factors.append(n)
+    return original_n, factors
+
+if __name__ == "__main__":
+    num, factors = find_prime_factors()
+    print(f"Prime factors of {num} are: {factors}")
+
+    
