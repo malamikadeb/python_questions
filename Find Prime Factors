@@ -1,0 +1,23 @@
+Write Python code to find the prime factors of the number 28.
+
+
+
+def main():
+    n = 28
+    factors = []
+    while n % 2 == 0:
+        factors.append(2)
+        n //= 2
+    i = 3
+    while i * i <= n:
+        while n % i == 0:
+            factors.append(i)
+            n //= i
+        i += 2
+    if n > 2:
+        factors.append(n)
+    return factors
+print(f"Prime factors of {n} are: {factors}")
+if __name__ == "__main__":
+    main()
+    
