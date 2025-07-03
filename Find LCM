@@ -1,0 +1,16 @@
+Using the numbers a = 10 and b = 15, write a Python program to find and print their LCM using a while loop.
+
+
+
+def main():
+    a = 10
+    b = 15
+    lcm = max(a, b)
+    while True:
+        if lcm % a == 0 and lcm % b == 0:
+            print("LCM is:", lcm)
+            break
+        lcm += 1
+
+if __name__ == "__main__":
+    main()
