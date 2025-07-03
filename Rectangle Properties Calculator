@@ -1,0 +1,19 @@
+Write a Python program that calculates both the area and perimeter of a rectangle. The function should take length and width as keyword arguments. Return a formatted string showing both calculations.
+
+
+
+def rectangle_metrics( length, width):
+    # Code Starts
+
+    # Write your code here 
+    area = length * width
+    perimeter = 2 * (length + width)
+    return f"Area: {area}, Perimeter: {perimeter}"
+    # Code Ends
+
+# Predefined inputs
+length = 5
+width = 3
+
+# Function call
+print(rectangle_metrics(length, width))
