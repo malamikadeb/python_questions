@@ -1,0 +1,27 @@
+Write a Python program that generates the first n prime numbers and print it.
+
+
+
+def generate_primes(n):
+    # Code Starts
+    prime_numbers_list = []
+    candidate = 2
+    print(f"First {n} prime numbers: ", end=" ")
+
+    while len(prime_numbers_list) < n:
+        is_prime = True
+        for i in range(2, int(candidate**0.5)+1):
+            if candidate % i == 0:
+                is_prime = False
+                break
+        if is_prime:
+            prime_numbers_list.append(candidate)
+            print(candidate, end=" ")
+        candidate += 1
+    # Code Ends
+
+# Predefined inputs
+num = 5
+
+# Function call
+generate_primes(num)
