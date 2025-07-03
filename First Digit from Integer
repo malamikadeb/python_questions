@@ -1,0 +1,19 @@
+Write a Python program that extracts the first digit from a positive integer.
+
+
+
+def get_first_digit(n):
+    # Code Starts
+
+    # Write your code here 
+    n = abs(n)  # Handle negative numbers
+    while n >= 10:
+        n //= 10
+    return n
+    # Code Ends
+
+# Predefined inputs
+n = 12345
+
+# Function call
+print(get_first_digit(n))
