@@ -1,0 +1,33 @@
+Write a Python program that calculates the sum of LCMs of all pairs from a list of three numbers. For numbers [a, b, c], calculate: LCM(a, b) + LCM(b, c) + LCM(a, c)
+
+
+
+def sum_of_lcm_pairs(x, y, z):
+    # Code Starts
+    x, y = a, b
+    while y != 0:
+        x, y = y, x % y
+    gcd_ab = x
+    lcm_ab = (a * b) // gcd_ab
+    x, y = a, c
+    while y != 0:
+        x, y = y, x % y
+    gcd_ac = x
+    lcm_ac = (a * c) // gcd_ac
+    x, y = b, c
+    while y != 0:
+        x, y = y, x % y
+    gcd_bc = x
+    lcm_bc = (b * c) // gcd_bc
+    sum_lcm = lcm_ab + lcm_ac + lcm_bc
+    return sum_lcm
+
+    # Code Ends
+
+# Predefined inputs
+a= 2
+b=3
+c= 4
+
+# Function call
+print(sum_of_lcm_pairs(a, b, c))
