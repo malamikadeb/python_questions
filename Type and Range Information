@@ -1,0 +1,24 @@
+Write a Python Program that provides information about a given value using built-in functions. The function should return the type of the value and whether it falls within a specified range (for numeric types only).
+
+
+
+def get_value_info(value, min_val, max_val):
+    # Code Starts
+
+    value_type = type(value).__name__
+    in_range = False
+    if isinstance(value, (int, float)):
+        in_range = min_val <= value <= max_val
+
+    return f"Type: {value_type}, In Range ({min_val}-{max_val}): {in_range}"
+
+
+    # Code Ends
+
+# Predefined inputs
+value = 25
+min_val = 10
+max_val = 50
+
+# Function call
+print(get_value_info(value, min_val, max_val))
