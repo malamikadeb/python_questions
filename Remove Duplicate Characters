@@ -1,0 +1,23 @@
+Write a Python program that removes duplicate characters from a string while preserving the order of first occurrence. The function should return the string without duplicates.
+
+
+
+def remove_duplicates(str1):
+    # Code Starts
+
+    seen = set()
+    result = []
+    for char in str1:
+        if char not in seen:
+            seen.add(char)
+            result.append(char)
+    return ''.join(result)
+
+
+    # Code Ends
+
+# Predefined inputs
+str = "programming"
+
+# Function call
+print(remove_duplicates(str))
