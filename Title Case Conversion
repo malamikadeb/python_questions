@@ -1,0 +1,26 @@
+Write a Python program that converts a string to title case, where the first letter of each word is capitalized and the rest are lowercase. The function should handle multiple spaces between words and preserve the original spacing.
+
+
+
+def to_title_case(str1):
+    # Code Starts
+    result = ''
+    in_word = False
+    for char in str1:
+        if char.isspace():
+            result += char
+            in_word = False
+        else:
+            if not in_word:
+                result += char.upper()
+                in_word = True
+            else:
+                result += char.lower()
+    return result
+    # Code Ends
+
+# Predefined inputs
+str = "hello world python"
+
+# Function call
+print(to_title_case(str))
