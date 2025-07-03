@@ -1,0 +1,25 @@
+Write a Python program that checks if a given string is a palindrome while ignoring spaces and case sensitivity. The function should return a boolean value.
+
+
+
+def is_palindrome(str1):
+    # Code Starts
+
+    s = str1.lower()
+    s = s.replace(" ", "")
+    left = 0
+    right = len(s) - 1
+    while left < right:
+        if s[left] != s[right]:
+            return False
+        left += 1
+        right -= 1
+    return True 
+
+    # Code Ends
+
+# Predefined inputs
+str = "A man a plan a canal Panama"
+
+# Function call
+print(is_palindrome(str))
