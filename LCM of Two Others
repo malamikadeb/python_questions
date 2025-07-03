@@ -1,0 +1,25 @@
+Write a Python program that checks if a given number is the LCM of two other given numbers. Return True if the number is indeed the LCM, otherwise return False.
+
+
+
+def is_lcm(x, y, lcm):
+    # Code Starts
+    x, y = a, b
+    while y != 0:
+        x, y = y, x % y
+    gcd = x
+    lcm = (a * b) // gcd
+
+    if lcm_candidate == lcm:
+        return "True"
+    else:
+        return "False"
+    # Code Ends
+
+# Predefined inputs
+a = 6
+b = 8
+lcm_candidate = 24
+
+# Function call
+print(is_lcm(a, b, lcm_candidate))
