@@ -1,0 +1,24 @@
+Write a Python program that checks if a given string is a palindrome (reads the same forwards and backwards). The function should ignore case sensitivity and return a boolean value.
+
+
+
+def is_palindrome(text):
+    # Code Starts
+
+    s = text.lower()
+    left = 0
+    right = len(s) - 1
+    while left < right:
+        if s[left] != s[right]:
+            return False
+        left += 1
+        right -= 1
+    return True
+
+    # Code Ends
+
+# Predefined inputs
+str = "racecar"
+
+# Function call
+print(is_palindrome(str))
