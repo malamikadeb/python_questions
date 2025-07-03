@@ -1,0 +1,17 @@
+Write a program to compute the factorial only if input is non-negative, otherwise print an error.
+
+
+
+def main():
+    num = int(input("Enter a number: "))
+    if num < 0:
+        print("Error")
+    else:
+        factorial = 1
+        for i in range(1, num + 1):
+            factorial *= i
+        print(f"Factorial of {num} is: {factorial}")
+
+if __name__ == "__main__":
+    main()
+    
