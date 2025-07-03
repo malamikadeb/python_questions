@@ -1,0 +1,31 @@
+Write a Python program that finds the Greatest Common Divisor (GCD) of three positive integers. The GCD is the largest number that divides all three numbers evenly. Use the property: GCD(a, b, c) = GCD(GCD(a, b), c)
+
+
+
+def find_gcd(a, b, c):
+    # Code Starts
+
+    x = a
+    y = b
+    z = c
+    while y != 0:
+        temp = y
+        y = x % y
+        x = temp
+
+    while z != 0:
+        temp = z
+        z = x % z
+        x = temp
+
+    return x
+
+    # Code Ends
+
+# Predefined inputs
+a = 12
+b = 18
+c = 24
+
+# Function call
+print(find_gcd(a, b, c))
