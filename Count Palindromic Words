@@ -1,0 +1,20 @@
+Write a Python program that counts how many words in a given sentence are palindromes. The function should split the sentence by spaces and check each word individually, ignoring case sensitivity.
+
+
+
+def count_palindrome_words(str1):
+    # Code Starts
+
+    s = str1.split()
+    count = 0
+    for item in s:
+        if item == item[::-1]:
+            count +=1
+    return count
+    # Code Ends
+
+# Predefined inputs
+str = "mom and dad are here"
+
+# Function call
+print(count_palindrome_words(str))
