@@ -1,0 +1,26 @@
+Write a Python program that counts the number of vowels and consonants in a given string. The function should return a tuple containing (vowel_count, consonant_count). Only alphabetic characters should be counted.
+
+
+
+def count_vowels_and_consonants(text):
+    # Code Starts
+
+    vowels = "aeiouAEIOU"
+    vowel_count = 0
+    consonant_count = 0
+    for char in text:
+        if char.isalpha():
+            if char in vowels:
+                vowel_count += 1
+            else:
+                consonant_count += 1
+    return (vowel_count, consonant_count)
+
+
+    # Code Ends
+
+# Predefined inputs
+str= "hello world"
+
+# Function call
+print(count_vowels_and_consonants(str))
